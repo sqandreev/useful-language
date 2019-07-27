@@ -1,8 +1,8 @@
 /**
- * tarrifs
+ * tariffs
  */
 
-.tarrifs__title {
+.tariffs__title {
   position: relative;
 
   padding-bottom: 1.5rem;
@@ -16,7 +16,7 @@
   letter-spacing: 3px;
 }
 
-.tarrifs__title::after {
+.tariffs__title::after {
   content: "";
 
   position: absolute;
@@ -31,9 +31,9 @@
   transform: translateX(-50%);
 }
 
-.tarrifs__list {
+.tariffs__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-row-gap: 5rem;
   justify-items: center;
   padding-left: 0;
@@ -43,10 +43,10 @@
   list-style: none;
 }
 
-.tarrifs__list-title {
-  padding-top: 3.5rem;
+.tariffs__list-title {
+  padding-top: 4rem;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.7rem;
 
   font-size: 1.5rem;
   color: var(--primary-color);
@@ -58,10 +58,16 @@
   background-size: 20px 36.5px;
 }
 
-.tarrifs__list-description {
+@media (min-width: 768px) { /* tablet */
+  .tariffs__list-title {
+    padding-top: 3.5rem;
+  }
+}
+
+.tariffs__list-description {
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 300px;
+  max-width: 270px;
 
   color: var(--primary-color);
   text-align: center;

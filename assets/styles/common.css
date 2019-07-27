@@ -55,7 +55,14 @@ html {
 }
 
 .page__main {
-  padding: 6rem 3rem;
+  padding: 4rem 3rem;
+}
+
+@media (min-width: 768px) { /* tablet */
+  .page__main {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 /**
