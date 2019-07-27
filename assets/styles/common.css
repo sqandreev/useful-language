@@ -115,9 +115,16 @@ html {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--primary-color);
   text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media (min-width: 768px) { /* tablet */
+  .header__top {
+    font-size: 2rem;
+  }
 }
 
 .header__menu {
