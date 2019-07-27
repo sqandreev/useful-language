@@ -51,7 +51,11 @@ html {
 }
 
 .page__header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.page__main {
+  padding: 6rem 3rem;
 }
 
 /**
@@ -67,6 +71,14 @@ html {
   height: 1px; 
   width: 1px; 
   overflow: hidden;
+}
+
+/**
+ * main
+ */
+
+.main {
+  background-color: var(--secondary-color);
 }
 
 /**

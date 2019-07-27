@@ -1,0 +1,68 @@
+/**
+ * tarrifs
+ */
+
+.tarrifs__title {
+  position: relative;
+
+  padding-bottom: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
+
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.tarrifs__title::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 3rem;
+  height: 1px;
+
+  background-color: var(--primary-color);
+
+  transform: translateX(-50%);
+}
+
+.tarrifs__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 5rem;
+  justify-items: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.tarrifs__list-title {
+  padding-top: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+
+  background-image: url("../images/svg/icons/price-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 20px 36.5px;
+}
+
+.tarrifs__list-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 300px;
+
+  color: var(--primary-color);
+  text-align: center;
+}
