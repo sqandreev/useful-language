@@ -35,9 +35,10 @@ html {
   display: grid;
   grid-template-columns: minmax(320px, 1600px);
   justify-content: center;
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
