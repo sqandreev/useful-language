@@ -50,6 +50,10 @@ html {
   background-color: var(--primary-color);
 }
 
+.page__header {
+  margin-bottom: 3rem;
+}
+
 /**
  * visually-hidden
  */
