@@ -122,7 +122,7 @@ html {
 }
 
 @media (min-width: 768px) { /* tablet */
-  .header__top {
+  .header__logo {
     font-size: 2rem;
   }
 }
