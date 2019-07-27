@@ -6,6 +6,7 @@
   --primary-color: #465491;
   --secondary-color: #ffffff;
   --purple-color: #6c7ab8;
+  --dark-purple-color: #4e5ea3;
 }
 /**
  * html
@@ -220,6 +221,18 @@ html {
   .header__navigation-link:hover {
     color: var(--secondary-color);
     
+    background-color: var(--purple-color);
+  }
+}
+
+.header__navigation-link--active {
+  background-color: var(--dark-purple-color);
+}
+
+@media (min-width: 768px) { /* tablet */
+  .header__navigation-link--active {
+    color: var(--secondary-color);
+
     background-color: var(--purple-color);
   }
 }
