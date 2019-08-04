@@ -3,11 +3,12 @@
  */
 
 :root {
-  --primary-color: #465491;
+  --primary-color: #4d4d4d;
   --secondary-color: #ffffff;
-  --purple-color: #6c7ab8;
-  --dark-purple-color: #4e5ea3;
   --gray-color: #e1e1e1;
+  --dark-gray-color: #eeeeee;
+  --green-color: #63856a;
+  --dark-green-color: #3c5a40;
 }
 /**
  * html
@@ -30,6 +31,15 @@ html {
 }
 
 /**
+ * img
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
  * page
  */
 
@@ -42,14 +52,14 @@ html {
   padding-right: 1rem;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 100rem;
+  margin-bottom: 0;
   margin-left: 0;
 
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   color: var(--secondary-color);
 
-  background-color: var(--primary-color);
+  background-color: var(--dark-gray-color);
 }
 
 .page__header {
@@ -58,14 +68,7 @@ html {
 }
 
 .page__main {
-  padding: 4rem 3rem;
-}
-
-@media (min-width: 768px) { /* tablet */
-  .page__main {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
+  padding-bottom: 4rem;
 }
 
 /**
@@ -91,6 +94,10 @@ html {
   background-color: var(--secondary-color);
 }
 
+.main__promo {
+  margin-bottom: 3.5rem;
+}
+
 /**
  * header
  */
@@ -110,20 +117,29 @@ html {
   background-color: var(--secondary-color);
   border-bottom: 1px solid var(--gray-color);
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header__logo {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 3.3rem;
 
   font-size: 1.6rem;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 3px;
+
+  background-image: url("../images/svg/content/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 1.5em;
 }
 
 @media (min-width: 768px) { /* tablet */
   .header__logo {
+    padding-left: 4rem;
+
     font-size: 2rem;
   }
 }
@@ -173,6 +189,10 @@ html {
   }
 }
 
+.header__navigation--active {
+  display: block;
+}
+
 .header__navigation-list {
   padding-left: 0;
   margin-top: 0;
@@ -196,7 +216,7 @@ html {
   padding: 1.5rem;
 
   font-size: 1.5rem;
-  background-color: var(--purple-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   text-decoration: none;
   border-bottom: 1px solid var(--secondary-color);
@@ -218,7 +238,55 @@ html {
   .header__navigation-link:hover {
     color: var(--secondary-color);
     
-    background-color: var(--purple-color);
+    background-color: var(--primary-color);
+  }
+}
+
+/**
+ * promo
+ */
+
+.promo {
+  position: relative;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-auto-rows: minmax(29.5rem, auto);
+
+  background: radial-gradient(
+    ellipse at center, 
+    var(--green-color) 1%, 
+    var(--dark-green-color) 100%
+  );
+  border: 1.5rem solid var(--secondary-color);
+  box-shadow: 0 1px 0 var(--gray-color);
+}
+
+@media (min-width: 768px) { /* tablet */
+  .promo {
+    grid-auto-rows: minmax(37.5rem, auto);
+  }
+}
+
+@media (min-width: 1024px) { /* tablet */
+  .promo {
+    grid-auto-rows: minmax(42.5rem, auto);
+  }
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) { /* tablet */
+  .promo__title {
+    font-size: 2.5rem;
   }
 }
 
