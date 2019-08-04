@@ -123,9 +123,9 @@ img {
 .header__logo {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 2.5rem;
+  padding-left: 2.8rem;
 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -252,7 +252,7 @@ img {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-auto-rows: minmax(29.5rem, auto);
+  grid-auto-rows: minmax(20.5rem, auto);
 
   background: radial-gradient(
     ellipse at center, 
