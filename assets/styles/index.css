@@ -123,9 +123,9 @@ img {
 .header__logo {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 3.3rem;
+  padding-left: 2.5rem;
 
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -282,11 +282,13 @@ img {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 @media (min-width: 768px) { /* tablet */
   .promo__title {
     font-size: 2.5rem;
+    text-align: center;
   }
 }
 
