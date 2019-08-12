@@ -427,7 +427,7 @@ img {
 
 .about__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-gap: 2rem 4rem;
   justify-items: center;
   margin-top: 0;
