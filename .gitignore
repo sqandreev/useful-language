@@ -1,0 +1,20 @@
+# General files
+*~
+.DS_Store
+
+# Build
+build/
+storybook-static/
+
+# Development stuff
+platforms/
+plugins/
+node_modules/
+coverage/
+npm-debug.log
+*.sublime-workspace
+*.pyc
+.vagrant
+.idea
+.vscode
+npm-debug.*
