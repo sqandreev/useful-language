@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Useful Language | Главная страница</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic"
+    />
     <link rel="stylesheet" href="assets/styles/index.css" />
     <meta
       name="keywords"
@@ -27,9 +31,6 @@
       <nav class="header__navigation">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#tariffs">Тарифы</a>
-          </li>
-          <li class="header__navigation-item">
             <a class="header__navigation-link" href="#about">О нас</a>
           </li>
           <li class="header__navigation-item">
@@ -37,8 +38,11 @@
           </li>
           <li class="header__navigation-item">
             <a class="header__navigation-link" href="#teachers"
-              >Преподователи</a
+              >Преподаватель</a
             >
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="#consultation">Консультация</a>
           </li>
         </ul>
         <button
@@ -61,234 +65,296 @@
       </section>
       <!-- /promo -->
 
-      <!-- tariffs -->
-      <section class="main__tariffs tariffs" id="tariffs">
-        <h2 class="tariffs__title title">Тарифы</h2>
-        <ul class="tariffs__list">
-          <li class="tariffs__list-item">
-            <h3 class="tariffs__list-title">Основной тариф</h3>
-            <p class="tariffs__list-description">
-              800 руб за час., гибкий подход, удаленное обучение
-            </p>
-          </li>
-          <li class="tariffs__list-item">
-            <h3 class="tariffs__list-title">Основной тариф</h3>
-            <p class="tariffs__list-description">
-              800 руб за час., гибкий подход, удаленное обучение
-            </p>
-          </li>
-          <li class="tariffs__list-item">
-            <h3 class="tariffs__list-title">Основной тариф</h3>
-            <p class="tariffs__list-description">
-              800 руб за час., гибкий подход, удаленное обучение
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- /tariffs -->
-
       <!-- about -->
       <section class="main__about about" id="about">
-        <h2 class="about__title title">О нас</h2>
-        <p class="about__description">
-          Вас приветствует школа иностранных языков Useful language, главное для
-          нашей организации это конечно же эффективное обучение своих клиентов
-          языкам (акцент в данный момент сделан на английском языке) и
-          извлечением из данного процеса максимальной пользы для изучающего. Все
-          обучение прдоставляется удаленно, все материалы адаптированны под
-          изучение поверх internet.
-        </p>
-        <p class="about__description">
-          Несколько основных моментов , которые пропагандирует школа
-          <strong class="about__keyword">Useful language:</strong>
-        </p>
-        <section class="about__list">
-          <p class="about__list-paragraph">
-            Изучение как развлечение - долой скучные материалы, акцент сделан на
-            повышении эрудиции обучаемого, разнообразиии изучаемых материалов,
-            вовлечении обучаемого в процесс изучения, развитии
-            заинтересованности в изучении.
-          </p>
-          <p class="about__list-paragraph">
-            Для эффективного обучения и наилучшего усвоения материала мы
-            стараемся задействовать максимальное количество органов чуств,
-            формируются красворды, формируются quicktest -ы и другие различные
-            дополнительные задания ( аудио материалы, крсворды, дополнительные
-            материалы по граматике, списки слов для изучения и др.)
-          </p>
-          <p class="about__list-paragraph">
-            Погружение в язык и доступность материалов для изучения - помимо
-            изучения языка непосредственно с преподавателем на занятиях, мы
-            формируем так же доступность изучаемых материалов средствами
-            виртуальных классов. Формируется соответствующее для обучаемого
-            окружение, которое включает в себя разделы vocabulary, grammar,
-            words to learn и др., все эти материалы доступны 24 часа в сутки
-            через сеть internet и есть возможность повторять, изучать,
-            погружаться в процесс когда угодно и где угодно. Платформа
-            виртуальных классов поддерживает windows, linux, IOS, android.
-          </p>
-          <p class="about__list-paragraph">
-            Таким образом обучение языку и изучение становится возможным
-            круглосуточно, когда удобно и где угодно. Школа Useful language не
-            оставляет своих учениеков плыть по течению одних после окончания
-            курсов или сета обучения предоставленных нашей организацией,
-            электронные материалы (дополнительные в том числе) остаются
-            доступными для обучающихся и после окончания изучения в течении
-            некоторого времени, что позволяет основательно закрепить в памяти
-            изученный материал на долгое время.
-          </p>
-        </section>
+        <div class="box">
+          <h2 class="box__title box__title--reverse title">О нас</h2>
+          <div class="about__section">
+            <p class="about__description">
+              Вас приветствует школа иностранных языков Useful language, главное
+              для нашей организации — это эффективное обучение своих клиентов и
+              извлечение из данного процесса максимальной пользы для изучающего.
+            </p>
+            <p class="about__description">
+              Несколько основных принципов, которые пропагандирует школа Useful
+              language:
+            </p>
+            <ol class="about__list">
+              <li class="about__list-item">
+                <p class="about__description">
+                  Изучение как развлечение - долой скучные материалы, акцент
+                  сделан на повышении эрудиции обучаемого, разнообразии
+                  изучаемых материалов и вовлечении обучаемого в процесс
+                  изучения.
+                </p>
+              </li>
+              <li class="about__list-item">
+                <p class="about__description">
+                  Для эффективного обучения и наилучшего усвоения материала мы
+                  стараемся учитывать особенности каждого ученика, чтобы сделать
+                  обучение максимально комфортным и увлекательным.
+                </p>
+              </li>
+              <li class="about__list-item">
+                <p class="about__description">
+                  Погружение в язык и доступность материалов для изучения. Всю
+                  пройденную информацию можно будет просматривать в любое
+                  доступное для вас время дня и ночи.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
       <!-- /about -->
 
       <!-- courses -->
       <section class="courses" id="courses">
-        <h2 class="courses__title title">Курсы</h2>
-        <p class="courses__description">
-          <strong>Useful language</strong> предоставляет курсы обучения по
-          английскому языку по следующим уровням и направлениям:
-        </p>
-        <section class="courses__tabs">
-          <ul class="courses__tabs-navigation">
-            <li class="courses__tabs-item">
-              <button
-                class="courses__tabs-button courses__tabs-button--active"
-                type="button"
-                data-course="General"
-              >
-                General
-              </button>
-            </li>
-            <li class="courses__tabs-item">
-              <button
-                class="courses__tabs-button"
-                type="button"
-                data-course="Beginner"
-              >
-                Beginner
-              </button>
-            </li>
-            <li class="courses__tabs-item">
-              <button
-                class="courses__tabs-button"
-                type="button"
-                data-course="Elementary"
-              >
-                Elementary
-              </button>
-            </li>
-          </ul>
-          <ul class="courses__content">
-            <li class="courses__content-item" data-course="General">
-              <h3 class="courses__content-title">Content 1</h3>
-
-              <p class="courses__content-description">
-                Курс Elementary предназначен для тех, кто прошел курс Beginner
-                или для тех, кто уже имеет некую стартовую базу, фундамент,
-                заложенный на предыдущем курсе. Так же данный курс предназначен
-                для новичков с более смелыми амбициями.
-              </p>
-
-              <p class="courses__content-description">
-                Школа Useful Language считает, что гибкость предоставления
-                материала для изучения делает курс подходящим как для учащихся с
-                некоторой базой, так и для начинающих. Как и во всех курсах,
-                предлагаемых своим ученикам, курс Elementary делает упор на
-                приобретении разговорной базы, базы грамматики, базы словарного
-                запаса.
-              </p>
-
-              <p class="courses__content-description">
-                В данный курс включены секции vocabulary, секции на
-                прослушивание аудио материалов и повторение их, секции
-                грамматики, таким образом ученикам будет предоставлен мощный
-                инструментарий для успешного освоения основ английского языка,
-                для правильного произношения, пополнения словарного запаса.
-              </p>
-
-              <p class="courses__content-description">
-                Школа Useful Language уверенна, что ученикам понравится
-                использовать приобретенный багаж знаний данного курса.
-              </p>
-            </li>
-            <li
-              class="courses__content-item visually-hidden"
-              data-course="Beginner"
-            >
-              <h3 class="courses__content-title">Content 2</h3>
-
-              <p class="courses__content-description">
-                Курс Elementary предназначен для тех, кто прошел курс Beginner
-                или для тех, кто уже имеет некую стартовую базу, фундамент,
-                заложенный на предыдущем курсе. Так же данный курс предназначен
-                для новичков с более смелыми амбициями.
-              </p>
-
-              <p class="courses__content-description">
-                Школа Useful Language считает, что гибкость предоставления
-                материала для изучения делает курс подходящим как для учащихся с
-                некоторой базой, так и для начинающих. Как и во всех курсах,
-                предлагаемых своим ученикам, курс Elementary делает упор на
-                приобретении разговорной базы, базы грамматики, базы словарного
-                запаса.
-              </p>
-
-              <p class="courses__content-description">
-                В данный курс включены секции vocabulary, секции на
-                прослушивание аудио материалов и повторение их, секции
-                грамматики, таким образом ученикам будет предоставлен мощный
-                инструментарий для успешного освоения основ английского языка,
-                для правильного произношения, пополнения словарного запаса.
-              </p>
-
-              <p class="courses__content-description">
-                Школа Useful Language уверенна, что ученикам понравится
-                использовать приобретенный багаж знаний данного курса.
-              </p>
-            </li>
-            <li
-              class="courses__content-item visually-hidden"
-              data-course="Elementary"
-            >
-              <h3 class="courses__content-title">Content 3</h3>
-
-              <p class="courses__content-description">
-                Курс Elementary предназначен для тех, кто прошел курс Beginner
-                или для тех, кто уже имеет некую стартовую базу, фундамент,
-                заложенный на предыдущем курсе. Так же данный курс предназначен
-                для новичков с более смелыми амбициями.
-              </p>
-
-              <p class="courses__content-description">
-                Школа Useful Language считает, что гибкость предоставления
-                материала для изучения делает курс подходящим как для учащихся с
-                некоторой базой, так и для начинающих. Как и во всех курсах,
-                предлагаемых своим ученикам, курс Elementary делает упор на
-                приобретении разговорной базы, базы грамматики, базы словарного
-                запаса.
-              </p>
-
-              <p class="courses__content-description">
-                В данный курс включены секции vocabulary, секции на
-                прослушивание аудио материалов и повторение их, секции
-                грамматики, таким образом ученикам будет предоставлен мощный
-                инструментарий для успешного освоения основ английского языка,
-                для правильного произношения, пополнения словарного запаса.
-              </p>
-
-              <p class="courses__content-description">
-                Школа Useful Language уверенна, что ученикам понравится
-                использовать приобретенный багаж знаний данного курса.
-              </p>
-            </li>
-          </ul>
-        </section>
+        <h2 class="courses__main-title title title--line">Курсы</h2>
+        <div class="courses__wrapper">
+          <section class="courses__section courses__section--beginner">
+            <h3 class="courses__title">Beginner</h3>
+            <div class="courses__levels">
+              <h4 class="courses__levels-title">Степень сложности:</h4>
+              <ul class="courses__levels-list">
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+              </ul>
+            </div>
+            <p class="courses__subtitle">Чему вы научитесь:</p>
+            <ul class="courses__skills">
+              <li class="courses__skills-item">Преодолеете языковой барьер</li>
+              <li class="courses__skills-item">Начнете бегло разговаривать</li>
+              <li class="courses__skills-item">
+                Улучшите произношение и избавитесь от акцента
+              </li>
+              <li class="courses__skills-item">
+                Станете уверенно понимать собеседника
+              </li>
+              <li class="courses__skills-item">
+                Смотреть фильмы и сериалы на языке оригинала
+              </li>
+              <li class="courses__skills-item">
+                Закрепите материал по курсу общего английского
+              </li>
+            </ul>
+            <a class="courses__link" href="#">Подробнее</a>
+          </section>
+          <section class="courses__section courses__section--elementary">
+            <h3 class="courses__title">Elementary</h3>
+            <div class="courses__levels">
+              <h4 class="courses__levels-title">Степень сложности:</h4>
+              <ul class="courses__levels-list">
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+              </ul>
+            </div>
+            <p class="courses__subtitle">Чему вы научитесь:</p>
+            <ul class="courses__skills">
+              <li class="courses__skills-item">Преодолеете языковой барьер</li>
+              <li class="courses__skills-item">Начнете бегло разговаривать</li>
+              <li class="courses__skills-item">
+                Улучшите произношение и избавитесь от акцента
+              </li>
+              <li class="courses__skills-item">
+                Станете уверенно понимать собеседника
+              </li>
+              <li class="courses__skills-item">
+                Смотреть фильмы и сериалы на языке оригинала
+              </li>
+              <li class="courses__skills-item">
+                Закрепите материал по курсу общего английского
+              </li>
+            </ul>
+            <a class="courses__link" href="#">Подробнее</a>
+          </section>
+          <section class="courses__section courses__section--pre-intermediate">
+            <h3 class="courses__title">Pre-intermediate</h3>
+            <div class="courses__levels">
+              <h4 class="courses__levels-title">Степень сложности:</h4>
+              <ul class="courses__levels-list">
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+              </ul>
+            </div>
+            <p class="courses__subtitle">Чему вы научитесь:</p>
+            <ul class="courses__skills">
+              <li class="courses__skills-item">Преодолеете языковой барьер</li>
+              <li class="courses__skills-item">Начнете бегло разговаривать</li>
+              <li class="courses__skills-item">
+                Улучшите произношение и избавитесь от акцента
+              </li>
+              <li class="courses__skills-item">
+                Станете уверенно понимать собеседника
+              </li>
+              <li class="courses__skills-item">
+                Смотреть фильмы и сериалы на языке оригинала
+              </li>
+              <li class="courses__skills-item">
+                Закрепите материал по курсу общего английского
+              </li>
+            </ul>
+            <a class="courses__link" href="#">Подробнее</a>
+          </section>
+          <section class="courses__section courses__section--intermediate">
+            <h3 class="courses__title">Intermediate</h3>
+            <div class="courses__levels">
+              <h4 class="courses__levels-title">Степень сложности:</h4>
+              <ul class="courses__levels-list">
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li class="courses__levels-item"></li>
+                <li class="courses__levels-item"></li>
+              </ul>
+            </div>
+            <p class="courses__subtitle">Чему вы научитесь:</p>
+            <ul class="courses__skills">
+              <li class="courses__skills-item">Преодолеете языковой барьер</li>
+              <li class="courses__skills-item">Начнете бегло разговаривать</li>
+              <li class="courses__skills-item">
+                Улучшите произношение и избавитесь от акцента
+              </li>
+              <li class="courses__skills-item">
+                Станете уверенно понимать собеседника
+              </li>
+              <li class="courses__skills-item">
+                Смотреть фильмы и сериалы на языке оригинала
+              </li>
+              <li class="courses__skills-item">
+                Закрепите материал по курсу общего английского
+              </li>
+            </ul>
+            <a class="courses__link" href="#">Подробнее</a>
+          </section>
+          <section
+            class="courses__section courses__section--upper-intermediate"
+          >
+            <h3 class="courses__title">Upper-intermediate</h3>
+            <div class="courses__levels">
+              <h4 class="courses__levels-title">Степень сложности:</h4>
+              <ul class="courses__levels-list">
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li class="courses__levels-item"></li>
+              </ul>
+            </div>
+            <p class="courses__subtitle">Чему вы научитесь:</p>
+            <ul class="courses__skills">
+              <li class="courses__skills-item">Преодолеете языковой барьер</li>
+              <li class="courses__skills-item">Начнете бегло разговаривать</li>
+              <li class="courses__skills-item">
+                Улучшите произношение и избавитесь от акцента
+              </li>
+              <li class="courses__skills-item">
+                Станете уверенно понимать собеседника
+              </li>
+              <li class="courses__skills-item">
+                Смотреть фильмы и сериалы на языке оригинала
+              </li>
+              <li class="courses__skills-item">
+                Закрепите материал по курсу общего английского
+              </li>
+            </ul>
+            <a class="courses__link" href="#">Подробнее</a>
+          </section>
+          <section class="courses__section courses__section--advanced">
+            <h3 class="courses__title">Advanced</h3>
+            <div class="courses__levels">
+              <h4 class="courses__levels-title">Степень сложности:</h4>
+              <ul class="courses__levels-list">
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+                <li
+                  class="courses__levels-item courses__levels-item--current"
+                ></li>
+              </ul>
+            </div>
+            <p class="courses__subtitle">Чему вы научитесь:</p>
+            <ul class="courses__skills">
+              <li class="courses__skills-item">Преодолеете языковой барьер</li>
+              <li class="courses__skills-item">Начнете бегло разговаривать</li>
+              <li class="courses__skills-item">
+                Улучшите произношение и избавитесь от акцента
+              </li>
+              <li class="courses__skills-item">
+                Станете уверенно понимать собеседника
+              </li>
+              <li class="courses__skills-item">
+                Смотреть фильмы и сериалы на языке оригинала
+              </li>
+              <li class="courses__skills-item">
+                Закрепите материал по курсу общего английского
+              </li>
+            </ul>
+            <a class="courses__link" href="#">Подробнее</a>
+          </section>
+        </div>
       </section>
       <!-- /courses -->
 
       <!-- teachers -->
-      <section class="teachers" id="teachers">
-        <h2 class="teachers__title title">Преподователи</h2>
+      <section class="main__teachers teachers" id="teachers">
+        <h2 class="teachers__title title title--line">Преподаватель</h2>
         <figure class="teachers__figure">
           <img
             class="teachers__image"
@@ -300,41 +366,80 @@
           <figcaption class="teachers__figcaption">
             <h3 class="teachers__title">Балякин Сергей Алексеевич</h3>
             <p class="teachers__description">
-              стаж преподавания более 4 лет., большой опыт работы с английским
+              Стаж преподавания более 4 лет., большой опыт работы с английским
               языком (перевод, общение, разработка документации), опыт работы в
               международных компаниях, большой опыт работы с носителями языка,
               является сертифицированным специалистом международного уровня по
-              информационным технологиям. Уровни преподавания: Beginner -
-              Advanced, подготовка к ЕГЭ, английский в информационных
-              технологиях.
+              информационным технологиям.
             </p>
-          </figcaption>
-        </figure>
-        <figure class="teachers__figure">
-          <img
-            class="teachers__image"
-            src="assets/images/teachers/sergey.jpg"
-            width="481"
-            height="541"
-            alt="Балякин Сергей Алексеевич"
-          />
-          <figcaption class="teachers__figcaption">
-            <h3 class="teachers__title">Балякин Сергей Алексеевич</h3>
             <p class="teachers__description">
-              стаж преподавания более 4 лет., большой опыт работы с английским
-              языком (перевод, общение, разработка документации), опыт работы в
-              международных компаниях, большой опыт работы с носителями языка,
-              является сертифицированным специалистом международного уровня по
-              информационным технологиям. Уровни преподавания: Beginner -
-              Advanced, подготовка к ЕГЭ, английский в информационных
-              технологиях.
+              <strong>Уровни преподавания:</strong> Beginner - Advanced,
+              подготовка к ЕГЭ, английский в информационных технологиях.
             </p>
           </figcaption>
         </figure>
       </section>
       <!-- /teachers -->
+
+      <!-- consultation -->
+      <section class="consultation">
+        <h2 class="consultation__title title title--line">Получите первую консультацию по курсам английского языка</h2>
+        <form class="consultation__form" action="" method="">
+          <input class="consultation__input" type="text" name="user_name" placeholder="Имя" required>
+          <input class="consultation__input" type="email" name="user_email" placeholder="E-mail" required>
+          <input class="consultation__input" type="tel" name="user_phone" placeholder="Телефон" required>
+          <button class="consultation__button" type="submit">Отправить</button>
+        </form>
+      </section>
+      <!-- /consultation -->
     </main>
     <!-- /main -->
-    <script src="assets/scripts/index.js"></script>
+
+    <!-- footer -->
+    <footer class="page__footer footer">
+      <p class="footer__copyright">&copy; Все права защищены 2019</p>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a
+            class="footer__social-link"
+            href="https://vk.com"
+            rel="noopener noreferrer"
+            aria-label="Наш вконтакте"
+            target="_blank"
+          >
+            <svg class="footer__social-icon footer__social-icon--vk">
+              <use xlink:href="assets/images/social-icons.svg#vk" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a
+            class="footer__social-link"
+            href="https://instagram.com"
+            rel="noopener noreferrer"
+            aria-label="Наш инстаграм"
+            target="_blank"
+          >
+            <svg class="footer__social-icon footer__social-icon--instagram">
+              <use xlink:href="assets/images/social-icons.svg#instagram" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a
+            class="footer__social-link"
+            href="https://youtube.com"
+            rel="noopener noreferrer"
+            aria-label="Наш ютуб"
+            target="_blank"
+          >
+            <svg class="footer__social-icon footer__social-icon--youtube">
+              <use xlink:href="assets/images/social-icons.svg#youtube" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <!-- /footer -->
   </body>
 </html>
