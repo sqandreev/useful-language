@@ -272,10 +272,15 @@ img {
   padding: 1.5rem;
 
   font-size: 1.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--blue-color);
   color: var(--secondary-color);
   text-decoration: none;
   border-bottom: 1px solid var(--secondary-color);
+}
+
+.header__navigation-link:hover {
+  cursor: pointer;
+  background-color: var(--dark-blue-color);
 }
 
 @media (min-width: 768px) { /* tablet */
@@ -294,7 +299,7 @@ img {
   .header__navigation-link:hover {
     color: var(--secondary-color);
     
-    background-color: var(--primary-color);
+    background-color: var(--blue-color);
   }
 }
 
@@ -475,8 +480,10 @@ img {
 }
 
 .courses__wrapper {
+  --section-width: 325px;
+
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--section-width), 1fr));
   justify-items: center;
   grid-auto-rows: minmax(15rem, auto);
   grid-gap: 3rem;
@@ -484,6 +491,8 @@ img {
 
 @media (min-width: 768px) { /* tablet */
   .courses__wrapper {
+    --section-width: 450px;
+
     justify-items: stretch;
   }
 }
@@ -491,10 +500,10 @@ img {
 .courses__section {
   position: relative;
 
-  padding-top: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 4rem;
-  padding-left: 4rem;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
   border: 1px solid var(--gray-color);
   border-radius: 5px;
 }
@@ -504,7 +513,7 @@ img {
     padding-top: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
-    padding-left: 10rem;
+    padding-left: 8rem;
   }
   
   .courses__section::before {
@@ -512,7 +521,7 @@ img {
   
     position: absolute;
     top: 2rem;
-    left: 2rem;
+    left: 1.5rem;
   
     display: flex;
     justify-content: center;
@@ -689,9 +698,29 @@ img {
 }
 
 .teachers__figcaption {
+  position: relative;
+
   padding: 2.5rem;
 
   background-color: var(--secondary-color);
+}
+
+@media (min-width: 1024px) { /* desktop */
+  .teachers__figcaption::before {
+    --border-size: 3.0rem;
+  
+    content: "";
+  
+    position: absolute;
+    top: 50%;
+    left: -3.0rem;
+  
+    border-top: var(--border-size) solid transparent;
+    border-right: var(--border-size) solid var(--secondary-color);
+    border-bottom: var(--border-size) solid transparent;
+  
+    transform: translateY(-50%);
+  }
 }
 
 .teachers__figcaption .teachers__title { /* That's bad...*/
@@ -809,10 +838,7 @@ img {
 }
 
 .consultation__form {
-  display: flex;
-  flex-direction: column;
-
-  min-width: 33rem;
+  max-width: 550px;
 }
 
 .consultation__input {
@@ -837,31 +863,32 @@ img {
   border-color: var(--blue-color);
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.consultation__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   color: var(--primary-color);
 }
 
-::-moz-placeholder { /* Firefox 19+ */
+.consultation__input::-moz-placeholder { /* Firefox 19+ */
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   color: var(--primary-color);
 }
 
-:-ms-input-placeholder { /* IE 10+ */
+.consultation__input:-ms-input-placeholder { /* IE 10+ */
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   color: var(--primary-color);
 }
 
-:-moz-placeholder { /* Firefox 18- */
+.consultation__input:-moz-placeholder { /* Firefox 18- */
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   color: var(--primary-color);
 }
 
 .consultation__button {
+  width: 100%;
   height: 60px;
 
   color: var(--secondary-color);
