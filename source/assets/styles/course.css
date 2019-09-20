@@ -80,8 +80,15 @@
 
 .course__wrapper {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-column-gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-gap: 5rem;
+}
+
+@media (min-width: 768px) { /* tablet */
+  .course__wrapper {
+    grid-gap: 2rem;
+    grid-template-columns: 3fr 2fr;
+  }
 }
 
 .course__sidebar {
