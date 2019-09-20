@@ -111,19 +111,7 @@
   width: 200px;
   height: 200px;
   margin-bottom: 3rem;
-
-  background: radial-gradient(
-            white 50%, 
-              transparent 51%
-            ), 
-            conic-gradient(
-              #7db0f0 0% 50%, 
-              #fd8b74 0% 60%,
-              #b3dd86 0% 70%,
-              #bda8f0 0% 80%,
-              #ffd876 0% 90%,
-              #f09fcd 90% 100%
-            );
+  
   border-radius: 50%;
 }
 
