@@ -6,6 +6,55 @@
   background-color: var(--secondary-color);
 }
 
+.course__feedback {
+  margin-bottom: 6rem;
+}
+
+.course__feedback-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.course__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 50px;
+  grid-gap: 3rem;
+}
+
+.course__input {
+  border: 1px solid var(--gray-color);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+
+.course__input:focus {
+  border-color: var(--blue-color);
+  outline: none;
+}
+
+.course__button {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+
+  background-color: var(--blue-color);
+  border: none;
+
+  transition-property: background-color;
+  transition-duration: 0.75s;
+}
+
+.course__button:hover {
+  background-color: var(--dark-blue-color);
+
+  cursor: pointer;
+}
+
 .course__section {
   margin-bottom: 6rem;
 }
