@@ -9,9 +9,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic"
     />
-    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/common.css" />
-    <link rel="stylesheet" href="assets/styles/course.css">
+    <link rel="stylesheet" href="assets/styles/course.css" />
     <meta
       name="keywords"
       content="useful-language, language, useful, глобализация, языки, люди, коммуникация"
@@ -24,12 +24,14 @@
   <body class="page">
     <!-- header -->
     <header class="page__header header">
-      <img
-        src="assets/images/svg/content/logo.svg"
-        width="285"
-        height="42"
-        alt="Useful language"
-      />
+      <a href="index.html">
+        <img
+          src="assets/images/svg/content/logo.svg"
+          width="285"
+          height="42"
+          alt="Useful language"
+        />
+      </a>
       <nav class="header__navigation">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
@@ -44,7 +46,9 @@
             >
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#consultation">Консультация</a>
+            <a class="header__navigation-link" href="#consultation"
+              >Консультация</a
+            >
           </li>
         </ul>
         <button
@@ -56,43 +60,93 @@
     </header>
     <!-- /header -->
 
-    <main class="page__course course"> 
-      <h2 class="course__title">Вы научитесь</h2>
-      <ul class="course__list">
-        <li class="course__list-item" data-count="1">
-          <p class="course__list-description">
-            Повысите общий уровень английского
-          </p>
-        </li>
-        <li class="course__list-item" data-count="2">
-          <p class="course__list-description">
-            Улучшите восприятие языка на слух
-          </p>
-        </li>
-        <li class="course__list-item" data-count="3">
-          <p class="course__list-description">
-            Сможете разговаривать на бытовые темы
-          </p>
-        </li>
-        <li class="course__list-item" data-count="4">
-          <p class="course__list-description">
-            Начнете смотреть сериалы на английском
-          </p>
-        </li>
-        <li class="course__list-item" data-count="5">
-          <p class="course__list-description">
-            Станете самостоятельны в путешествиях
-          </p>
-        </li>
-        <li class="course__list-item" data-count="6">
-          <p class="course__list-description">
-            Сделаете свою жизнь яркой
-          </p>
-        </li>
-      </ul>
+    <main class="page__course course">
+      <section class="course__section">
+        <h2 class="course__title title title--line">Вы научитесь</h2>
+        <ul class="course__list">
+          <li class="course__list-item" data-count="1">
+            <p class="course__list-description">
+              Повысите общий уровень английского
+            </p>
+          </li>
+          <li class="course__list-item" data-count="2">
+            <p class="course__list-description">
+              Улучшите восприятие языка на слух
+            </p>
+          </li>
+          <li class="course__list-item" data-count="3">
+            <p class="course__list-description">
+              Сможете разговаривать на бытовые темы
+            </p>
+          </li>
+          <li class="course__list-item" data-count="4">
+            <p class="course__list-description">
+              Начнете смотреть сериалы на английском
+            </p>
+          </li>
+          <li class="course__list-item" data-count="5">
+            <p class="course__list-description">
+              Станете самостоятельны в путешествиях
+            </p>
+          </li>
+          <li class="course__list-item" data-count="6">
+            <p class="course__list-description">
+              Сделаете свою жизнь яркой
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="course__section">
+        <h2 class="course__title title title--line">О программе</h2>
+        <div class="course__wrapper">
+          <section class="course__content">
+            <h3 class="course__subtitle title">Содержание</h3>
+            <p class="course__description">
+              Курсы «Английский язык для подростков» помогут вашему ребенку
+              освоиться с новым для него языком или закрепить уже имеющиеся
+              знаний. Курсы подойдут для детей и подростков от 10 лет.
+            </p>
+
+            <p class="course__description">
+              Курс «Английский для подростков» рассчитан на углубленное изучение
+              основ английского языка, объединяющего и его британский, и
+              американский вариант.
+            </p>
+
+            <p class="course__description">
+              Курс «Английский для подростков» рассчитан на углубленное изучение
+              основ английского языка, объединяющего и его британский, и
+              американский вариант.
+            </p>
+
+            <p class="course__description">
+              Курс «Английский для подростков» рассчитан на углубленное изучение
+              основ английского языка, объединяющего и его британский, и
+              американский вариант.
+            </p>
+
+            <p class="course__description">
+              Курс «Английский для подростков» рассчитан на углубленное изучение
+              основ английского языка, объединяющего и его британский, и
+              американский вариант.
+            </p>
+          </section>
+          <aside class="course__sidebar">
+            <h3 class="course__subtitle title">Из чего состоит курс</h3>
+            <div class="course__diagram"></div>
+            <ul class="course__content">
+              <li class="course__content-item">Общение <span class="course__content-percent">50%</span></li>
+              <li class="course__content-item course__content-item--reading">Чтение<span class="course__content-percent">10%</span></li>
+              <li class="course__content-item course__content-item--writting">Письмо<span class="course__content-percent">10%</span></li>
+              <li class="course__content-item course__content-item--listening">Аудирование<span class="course__content-percent">10%</span></li>
+              <li class="course__content-item course__content-item--vocabulary">Лексика<span class="course__content-percent">10%</span></li>
+              <li class="course__content-item course__content-item--grammar">Грамматика<span class="course__content-percent">10%</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
     </main>
 
-    
     <!-- footer -->
     <footer class="page__footer footer">
       <p class="footer__copyright">&copy; Все права защищены 2019</p>

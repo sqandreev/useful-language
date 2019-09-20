@@ -6,19 +6,30 @@
   background-color: var(--secondary-color);
 }
 
-.course__title {
-  margin-top: 0;
-  margin-bottom: 3.5rem;
+.course__section {
+  margin-bottom: 6rem;
+}
 
-  font-size: 2rem;
+.course__section:last-child {
+  margin-bottom: 0;
+}
+
+.course__title {
+  margin-bottom: 3.5rem;
+}
+
+.course__subtitle {
+  margin-bottom: 1.5rem;
+
+  font-size: 1.4rem;
   font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-align: left;
 }
 
 .course__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-auto-rows: minmax(3.5rem, auto);
   grid-gap: 4.5rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -64,5 +75,104 @@
 .course__list-description {
   max-width: 330px;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.course__wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 2rem;
+}
+
+.course__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course__description {
+  max-width: 700px;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.course__description:last-child {
+  margin-bottom: 0;
+}
+
+.course__diagram {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 3rem;
+
+  background: radial-gradient(
+            white 40%, 
+              transparent 41%
+            ), 
+            conic-gradient(
+              #7db0f0 0% 50%, 
+              #fd8b74 0% 60%,
+              #b3dd86 0% 70%,
+              #bda8f0 0% 80%,
+              #ffd876 0% 90%,
+              #f09fcd 90% 100%
+            );
+  border-radius: 50%;
+}
+
+.course__content {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.course__content-item {
+  position: relative;
+
+  margin-bottom: 0.6rem;
+  padding-left: 1.5rem;
+}
+
+.course__content-item::before {
+  content: "";
+
+  --circle-background-color: #7db0f0;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 0.75rem;
+  height: 0.75rem;
+
+  border-radius: 50%;
+  background-color: var(--circle-background-color);
+
+  transform: translateY(-50%);
+}
+
+.course__content-item--reading::before {
+  --circle-background-color: #fd8b74;
+}
+
+.course__content-item--writting::before {
+  --circle-background-color: #b3dd86;
+}
+
+.course__content-item--listening::before {
+  --circle-background-color: #bda8f0;
+}
+
+.course__content-item--vocabulary::before {
+  --circle-background-color: #ffd876;
+}
+
+.course__content-item--grammar::before {
+  --circle-background-color: #f09fcd;
+}
+
+.course__content-item:last-child {
   margin-bottom: 0;
 }

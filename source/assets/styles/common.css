@@ -245,6 +245,38 @@ img {
 }
 
 /**
+ * title
+ */
+
+.title {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.title--line {
+  padding-bottom: 1.5rem;
+}
+
+.title--line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 3rem;
+  height: 1px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+/**
  * footer
  */
 
