@@ -83,6 +83,11 @@ img {
   padding: 1.5rem 3rem;
 }
 
+.page__course {
+  padding: 5rem;
+  margin-bottom: 1.5rem;
+}
+
 /**
  * visually-hidden
  */
