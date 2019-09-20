@@ -84,13 +84,13 @@ img {
 }
 
 .page__course {
-  padding: 2rem 4rem;
+  padding-bottom: 4rem;
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) { /* tablet */
   .page__course {
-    padding: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
