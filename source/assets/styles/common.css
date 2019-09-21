@@ -261,6 +261,7 @@ img {
   margin-bottom: 0;
 
   font-size: 2rem;
+  font-weight: normal;
   color: var(--primary-color);
   text-align: center;
   text-transform: uppercase;
