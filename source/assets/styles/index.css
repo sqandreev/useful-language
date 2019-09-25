@@ -120,9 +120,17 @@
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 
+  font-size: 1.5rem;
+
   background-color: var(--secondary-color);
 
   transform: translateX(-50%);
+}
+
+@media (min-width: 768px) { /* tablet */
+  .box__title {
+    font-size: 2rem;
+  }
 }
 
 .box__title--reverse {
