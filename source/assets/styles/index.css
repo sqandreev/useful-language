@@ -554,6 +554,9 @@
   width: 9999px;
 
   list-style: none;
+
+  transition-property: margin-left;
+  transition-duration: 0.75s;
 }
 
 .comments__item {
