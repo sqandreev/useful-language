@@ -10,10 +10,7 @@
   var j = 1;
 
   commentsPrevButton.addEventListener("click", () => {
-    console.log(commentsList.style.marginLeft);
-    
-    if (parseInt(commentsList.style.marginLeft) === 0) {
-      console.log(true);
+    if (parseInt(commentsList.style.marginLeft) === -100) {
       commentsCountItems.forEach(element => element.classList.remove("comments-count__item--current"));
 
       commentsCountItems[0].classList.add("comments-count__item--current");
