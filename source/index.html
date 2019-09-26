@@ -430,7 +430,6 @@
           class="comments__button comments__button--previous"
           type="button"
           aria-label="Предыдущий отзыв"
-          disabled
         ></button>
         <button
           class="comments__button comments__button--next"
@@ -439,7 +438,7 @@
         ></button>
         <div class="comments__wrapper">
           <ul class="comments__list">
-            <li class="comments__item">
+            <li class="comments__item" data-count="0">
               <figure class="comments__figure">
                 <img
                   class="comments__image"
@@ -459,7 +458,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="comments__item">
+            <li class="comments__item" data-count="1">
               <figure class="comments__figure">
                 <img
                   class="comments__image"
@@ -479,7 +478,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="comments__item">
+            <li class="comments__item" data-count="2">
               <figure class="comments__figure">
                 <img
                   class="comments__image"
@@ -503,9 +502,6 @@
         </div>
       </div>
       <ul class="comments-count">
-        <li class="comments-count__item comments-count__item--current"></li>
-        <li class="comments-count__item"></li>
-        <li class="comments-count__item"></li>
       </ul>
     </section>
     <!-- /comments -->
