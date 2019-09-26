@@ -10,11 +10,28 @@
   var j = 1;
 
   commentsPrevButton.addEventListener("click", () => {
+    console.log(commentsList.style.marginLeft);
+    
+    if (parseInt(commentsList.style.marginLeft) === 0) {
+      console.log(true);
+      commentsCountItems.forEach(element => element.classList.remove("comments-count__item--current"));
+
+      commentsCountItems[0].classList.add("comments-count__item--current");
+    }
+
     if (commentsList.style.marginLeft === "" || commentsList.style.marginLeft === "0%") {
+
       return;
     }
 
     commentsList.style.marginLeft = parseInt(commentsList.style.marginLeft) + 100 + "%";
+
+    if (commentsList.style.marginLeft !== "0%") {
+      commentsCountItems.forEach(element => element.classList.remove("comments-count__item--current"));
+    
+      var test = Number(commentsList.style.marginLeft.toString().slice(1, 2));
+      commentsCountItems[test].classList.add("comments-count__item--current");
+    }
   });
 
   commentsNextButton.addEventListener("click", () => {
@@ -25,9 +42,19 @@
     if (commentsList.style.marginLeft === "") {
       commentsList.style.marginLeft = "-100%";
 
+      commentsCountItems.forEach(element => element.classList.remove("comments-count__item--current"));
+
+      commentsCountItems[1].classList.add("comments-count__item--current");
+
       return;
     }
+
     commentsList.style.marginLeft = parseInt(commentsList.style.marginLeft) - 100 + "%";
+
+    commentsCountItems.forEach(element => element.classList.remove("comments-count__item--current"));
+    
+    var test = Number(commentsList.style.marginLeft.toString().slice(1, 2));
+    commentsCountItems[test].classList.add("comments-count__item--current");
   });
 
   for (let i = 0; i < commentsListItems.length; i++) {
