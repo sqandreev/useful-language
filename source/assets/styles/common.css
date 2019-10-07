@@ -163,7 +163,7 @@ img {
   background-image: url("../images/svg/icons/close-icon.svg");
 }
 
-@media (min-width: 768px) { /* tablet */
+@media (min-width: 920px) { /* tablet */
   .header__menu {
     display: none;
   }
@@ -184,7 +184,7 @@ img {
   list-style: none;
 }
 
-@media (min-width: 768px) { /* tablet */
+@media (min-width: 920px) { /* tablet */
   .header__navigation-list {
     position: static;
     top: auto;
@@ -219,7 +219,7 @@ img {
   background-color: var(--dark-blue-color);
 }
 
-@media (min-width: 768px) { /* tablet */
+@media (min-width: 920px) { /* tablet */
   .header__navigation-link {
     padding-top: 0;
     padding-bottom: 0;
